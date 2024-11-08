@@ -317,8 +317,8 @@
   "maintainGms1Font":false,
   "name":"Font1",
   "parent":{
-    "name":"Elemental Overdrive Test",
-    "path":"Elemental Overdrive Test.yyp",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[
