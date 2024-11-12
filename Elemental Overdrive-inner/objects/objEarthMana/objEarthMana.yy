@@ -6,10 +6,13 @@
   "name":"objEarthMana",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Mana",
+    "path":"folders/Objects/Mana.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objParentPickup",
+    "path":"objects/objParentPickup/objParentPickup.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"waterManaSpr",
-    "path":"sprites/waterManaSpr/waterManaSpr.yy",
+    "name":"sprEarthMana",
+    "path":"sprites/sprEarthMana/sprEarthMana.yy",
   },
   "spriteMaskId":null,
   "visible":true,

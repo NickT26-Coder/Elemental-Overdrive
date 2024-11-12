@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objWaterMana",
+  "%Name":"objParentPickup",
   "eventList":[],
   "managed":true,
-  "name":"objWaterMana",
+  "name":"objParentPickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Mana",
-    "path":"folders/Objects/Mana.yy",
+    "name":"Parents",
+    "path":"folders/Objects/Parents.yy",
   },
-  "parentObjectId":{
-    "name":"objParentPickup",
-    "path":"objects/objParentPickup/objParentPickup.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"waterManaSpr",
-    "path":"sprites/waterManaSpr/waterManaSpr.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

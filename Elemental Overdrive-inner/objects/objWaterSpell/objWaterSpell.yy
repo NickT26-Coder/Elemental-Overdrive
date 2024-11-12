@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objWaterMana",
+  "%Name":"objWaterSpell",
   "eventList":[],
   "managed":true,
-  "name":"objWaterMana",
+  "name":"objWaterSpell",
   "overriddenProperties":[],
   "parent":{
-    "name":"Mana",
-    "path":"folders/Objects/Mana.yy",
+    "name":"SpellObjects",
+    "path":"folders/Objects/SpellObjects.yy",
   },
-  "parentObjectId":{
-    "name":"objParentPickup",
-    "path":"objects/objParentPickup/objParentPickup.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
