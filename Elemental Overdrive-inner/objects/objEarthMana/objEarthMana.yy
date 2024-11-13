@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEarthMana",
-    "path":"sprites/sprEarthMana/sprEarthMana.yy",
+    "name":"spr_earthPickup",
+    "path":"sprites/spr_earthPickup/spr_earthPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

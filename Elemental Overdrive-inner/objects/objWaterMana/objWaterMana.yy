@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"waterManaSpr",
-    "path":"sprites/waterManaSpr/waterManaSpr.yy",
+    "name":"spr_waterPickup",
+    "path":"sprites/spr_waterPickup/spr_waterPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

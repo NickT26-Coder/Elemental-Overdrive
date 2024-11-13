@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objAirMana",
+  "%Name":"objRandomMana",
   "eventList":[],
   "managed":true,
-  "name":"objAirMana",
+  "name":"objRandomMana",
   "overriddenProperties":[],
   "parent":{
     "name":"Mana",
     "path":"folders/Objects/Mana.yy",
   },
-  "parentObjectId":{
-    "name":"objParentPickup",
-    "path":"objects/objParentPickup/objParentPickup.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_windPickup",
-    "path":"sprites/spr_windPickup/spr_windPickup.yy",
+    "name":"spr_randomPickup",
+    "path":"sprites/spr_randomPickup/spr_randomPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

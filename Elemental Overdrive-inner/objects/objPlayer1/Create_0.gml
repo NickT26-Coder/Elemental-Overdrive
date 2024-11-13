@@ -3,7 +3,7 @@
 gamepads = [];
 castQue = [];
 
-latestCast = null
+//latestCast = null
 
 fireMana = 0;
 waterMana = 0;

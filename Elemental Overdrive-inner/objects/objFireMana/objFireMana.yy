@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFireMana",
-    "path":"sprites/sprFireMana/sprFireMana.yy",
+    "name":"spr_firePickup",
+    "path":"sprites/spr_firePickup/spr_firePickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,
