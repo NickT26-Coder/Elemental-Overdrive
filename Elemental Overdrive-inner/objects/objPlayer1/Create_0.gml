@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-gamepads = [];
+//gamepads = [];
 castQue = [];
 
-//latestCast = null
+latestCast = undefined
 
 fireMana = 0;
 waterMana = 0;

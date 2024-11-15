@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-if (array_length(gamepads) > 0)
+if (array_length(global.gamepads) > 0)
 {	
 	
 	var haxis = gamepad_axis_value(0, gp_axislh);
@@ -30,11 +30,11 @@ if (array_length(gamepads) > 0)
 	}
 
 	// sends latest cast to cast queue
-	if (latestCast != null && array_length(castQue) < 2)
+	if (latestCast != undefined && array_length(castQue) < 2)
 	{
 	    array_push(castQue, latestCast); 
 
-	    latestCast = null; 
+	    latestCast = undefined; 
 	}
 
 	// clears cast queue

@@ -34,6 +34,7 @@
     {"id":{"name":"Fridge","path":"fonts/Fridge/Fridge.yy",},},
     {"id":{"name":"Slugs","path":"fonts/Slugs/Slugs.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+    {"id":{"name":"obj_stopWatch","path":"objects/obj_stopWatch/obj_stopWatch.yy",},},
     {"id":{"name":"objAirMana","path":"objects/objAirMana/objAirMana.yy",},},
     {"id":{"name":"objAirSpell","path":"objects/objAirSpell/objAirSpell.yy",},},
     {"id":{"name":"objEarthMana","path":"objects/objEarthMana/objEarthMana.yy",},},
@@ -44,6 +45,7 @@
     {"id":{"name":"objParentPickup","path":"objects/objParentPickup/objParentPickup.yy",},},
     {"id":{"name":"objPlayer1","path":"objects/objPlayer1/objPlayer1.yy",},},
     {"id":{"name":"objRandomMana","path":"objects/objRandomMana/objRandomMana.yy",},},
+    {"id":{"name":"objWall","path":"objects/objWall/objWall.yy",},},
     {"id":{"name":"objWaterMana","path":"objects/objWaterMana/objWaterMana.yy",},},
     {"id":{"name":"objWaterSpell","path":"objects/objWaterSpell/objWaterSpell.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
@@ -63,6 +65,7 @@
     {"id":{"name":"sprEarthMana","path":"sprites/sprEarthMana/sprEarthMana.yy",},},
     {"id":{"name":"sprFinishLine","path":"sprites/sprFinishLine/sprFinishLine.yy",},},
     {"id":{"name":"sprFireMana","path":"sprites/sprFireMana/sprFireMana.yy",},},
+    {"id":{"name":"Sprite18","path":"sprites/Sprite18/Sprite18.yy",},},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},},
     {"id":{"name":"sprPlayer1","path":"sprites/sprPlayer1/sprPlayer1.yy",},},
     {"id":{"name":"waterManaSpr","path":"sprites/waterManaSpr/waterManaSpr.yy",},},
@@ -73,8 +76,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_titleScreen","path":"rooms/rm_titleScreen/rm_titleScreen.yy",},},
-    {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+    {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

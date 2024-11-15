@@ -10,6 +10,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objEarthMana","path":"objects/objEarthMana/objEarthMana.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objFireMana","path":"objects/objFireMana/objFireMana.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objWaterMana","path":"objects/objWaterMana/objWaterMana.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objWall","path":"objects/objWall/objWall.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objPlayer1",
@@ -34,7 +35,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"accel","filters":[],"listItems":[],"multiselect":false,"name":"accel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"speed","filters":[],"listItems":[],"multiselect":false,"name":"speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.75","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"speed","filters":[],"listItems":[],"multiselect":false,"name":"speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"health","filters":[],"listItems":[],"multiselect":false,"name":"health","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"topSpeed","filters":[],"listItems":[],"multiselect":false,"name":"topSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"minSpeed","filters":[],"listItems":[],"multiselect":false,"name":"minSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-2","varType":0,},

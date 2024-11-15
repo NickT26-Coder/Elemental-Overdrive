@@ -1,0 +1,24 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Mana","order":7,"path":"folders/Objects/Mana.yy",},
+    {"name":"Parents","order":6,"path":"folders/Objects/Parents.yy",},
+    {"name":"Players","order":8,"path":"folders/Objects/Players.yy",},
+    {"name":"SpellObjects","order":11,"path":"folders/Objects/SpellObjects.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_stopWatch","order":12,"path":"objects/obj_stopWatch/obj_stopWatch.yy",},
+    {"name":"objEarthMana","order":1,"path":"objects/objEarthMana/objEarthMana.yy",},
+    {"name":"objFinishLine","order":9,"path":"objects/objFinishLine/objFinishLine.yy",},
+    {"name":"objFireMana","order":2,"path":"objects/objFireMana/objFireMana.yy",},
+    {"name":"objWall","order":13,"path":"objects/objWall/objWall.yy",},
+    {"name":"objWaterMana","order":3,"path":"objects/objWaterMana/objWaterMana.yy",},
+    {"name":"spr_title","order":1,"path":"sprites/spr_title/spr_title.yy",},
+    {"name":"sprAirMana","order":7,"path":"sprites/sprAirMana/sprAirMana.yy",},
+    {"name":"sprEarthMana","order":5,"path":"sprites/sprEarthMana/sprEarthMana.yy",},
+    {"name":"sprFinishLine","order":8,"path":"sprites/sprFinishLine/sprFinishLine.yy",},
+    {"name":"sprFireMana","order":4,"path":"sprites/sprFireMana/sprFireMana.yy",},
+    {"name":"Sprite18","order":1,"path":"sprites/Sprite18/Sprite18.yy",},
+    {"name":"sprPlayer1","order":6,"path":"sprites/sprPlayer1/sprPlayer1.yy",},
+    {"name":"waterManaSpr","order":2,"path":"sprites/waterManaSpr/waterManaSpr.yy",},
+  ],
+}
