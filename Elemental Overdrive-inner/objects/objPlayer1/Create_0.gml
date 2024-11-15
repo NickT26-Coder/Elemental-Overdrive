@@ -20,3 +20,7 @@ direction = 90;
 speed = 0
 // Sets animation to off
 image_speed = 0
+
+//Scaling t o fit map
+image_xscale=.75
+image_yscale=.75

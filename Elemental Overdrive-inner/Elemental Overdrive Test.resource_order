@@ -12,6 +12,7 @@
     {"name":"objFireMana","order":2,"path":"objects/objFireMana/objFireMana.yy",},
     {"name":"objWall","order":13,"path":"objects/objWall/objWall.yy",},
     {"name":"objWaterMana","order":3,"path":"objects/objWaterMana/objWaterMana.yy",},
+    {"name":"rm_mainAlt","order":1,"path":"rooms/rm_mainAlt/rm_mainAlt.yy",},
     {"name":"spr_title","order":1,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"sprAirMana","order":7,"path":"sprites/sprAirMana/sprAirMana.yy",},
     {"name":"sprEarthMana","order":5,"path":"sprites/sprEarthMana/sprEarthMana.yy",},

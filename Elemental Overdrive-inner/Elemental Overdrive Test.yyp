@@ -49,6 +49,7 @@
     {"id":{"name":"objWaterMana","path":"objects/objWaterMana/objWaterMana.yy",},},
     {"id":{"name":"objWaterSpell","path":"objects/objWaterSpell/objWaterSpell.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+    {"id":{"name":"rm_mainAlt","path":"rooms/rm_mainAlt/rm_mainAlt.yy",},},
     {"id":{"name":"rm_titleScreen","path":"rooms/rm_titleScreen/rm_titleScreen.yy",},},
     {"id":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"id":{"name":"spr_earthPickup","path":"sprites/spr_earthPickup/spr_earthPickup.yy",},},
@@ -76,6 +77,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_titleScreen","path":"rooms/rm_titleScreen/rm_titleScreen.yy",},},
+    {"roomId":{"name":"rm_mainAlt","path":"rooms/rm_mainAlt/rm_mainAlt.yy",},},
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
   ],
