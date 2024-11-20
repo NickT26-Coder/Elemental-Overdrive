@@ -121,11 +121,11 @@ if (array_length(global.gamepads) > 0)
 	}
 	if haxis < 0
 	{
-		direction += turnSpeed;  //Turn Left
+		direction += turnSpeed * (1.6-(speed/3));  //Turn Left * Turning friction
 	}
 	if haxis > 0
 	{
-		direction -= turnSpeed;  //Turn Right
+		direction -= turnSpeed * (1.6-(speed/3));  //Turn Right * Turning friction
 	}
 	
 	//slow down when not forward or reversing
