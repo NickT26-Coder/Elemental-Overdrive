@@ -7,6 +7,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_stopWatch","order":12,"path":"objects/obj_stopWatch/obj_stopWatch.yy",},
+    {"name":"obj_tutorialFinishLine","order":14,"path":"objects/obj_tutorialFinishLine/obj_tutorialFinishLine.yy",},
+    {"name":"obj_tutorialHandler","order":15,"path":"objects/obj_tutorialHandler/obj_tutorialHandler.yy",},
     {"name":"objEarthMana","order":1,"path":"objects/objEarthMana/objEarthMana.yy",},
     {"name":"objFinishLine","order":9,"path":"objects/objFinishLine/objFinishLine.yy",},
     {"name":"objFireMana","order":2,"path":"objects/objFireMana/objFireMana.yy",},
@@ -19,6 +21,7 @@
     {"name":"rm_tutorial","order":2,"path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"spr_credits","order":17,"path":"sprites/spr_credits/spr_credits.yy",},
     {"name":"spr_earthPickup","order":7,"path":"sprites/spr_earthPickup/spr_earthPickup.yy",},
+    {"name":"spr_FinishLineCheckered","order":19,"path":"sprites/spr_FinishLineCheckered/spr_FinishLineCheckered.yy",},
     {"name":"spr_firePickup","order":4,"path":"sprites/spr_firePickup/spr_firePickup.yy",},
     {"name":"spr_grassMiddle","order":8,"path":"sprites/spr_grassMiddle/spr_grassMiddle.yy",},
     {"name":"spr_lavaTileset","order":5,"path":"sprites/spr_lavaTileset/spr_lavaTileset.yy",},
