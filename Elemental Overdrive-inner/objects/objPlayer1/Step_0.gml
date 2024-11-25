@@ -141,6 +141,6 @@ if (array_length(global.gamepads) > 0)
 		}
 	}
 	
-	
-
+	//implement tile collisions
+	tilemap_get_at_pixel(tiles, x, y)
 }

@@ -24,3 +24,7 @@ image_speed = 0
 //Scaling t o fit map
 image_xscale=.75
 image_yscale=.75
+
+//Tile Collisions for Tutorial
+layerID = layer_get_id("tutorial_high");
+tiles = layer_tilemap_get_id(layerID);
