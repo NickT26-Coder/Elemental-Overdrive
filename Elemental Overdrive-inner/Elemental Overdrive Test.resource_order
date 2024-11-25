@@ -7,6 +7,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_stopWatch","order":12,"path":"objects/obj_stopWatch/obj_stopWatch.yy",},
+    {"name":"obj_tutorial_marker","order":16,"path":"objects/obj_tutorial_marker/obj_tutorial_marker.yy",},
     {"name":"obj_tutorialFinishLine","order":14,"path":"objects/obj_tutorialFinishLine/obj_tutorialFinishLine.yy",},
     {"name":"obj_tutorialHandler","order":15,"path":"objects/obj_tutorialHandler/obj_tutorialHandler.yy",},
     {"name":"objEarthMana","order":1,"path":"objects/objEarthMana/objEarthMana.yy",},
@@ -16,7 +17,6 @@
     {"name":"objWaterMana","order":3,"path":"objects/objWaterMana/objWaterMana.yy",},
     {"name":"rm_credits","order":4,"path":"rooms/rm_credits/rm_credits.yy",},
     {"name":"rm_end","order":5,"path":"rooms/rm_end/rm_end.yy",},
-    {"name":"rm_main","order":1,"path":"rooms/rm_main/rm_main.yy",},
     {"name":"rm_mainAlt","order":3,"path":"rooms/rm_mainAlt/rm_mainAlt.yy",},
     {"name":"rm_tutorial","order":2,"path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"spr_credits","order":17,"path":"sprites/spr_credits/spr_credits.yy",},
