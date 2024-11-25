@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFinishLine",
-    "path":"sprites/sprFinishLine/sprFinishLine.yy",
+    "name":"spr_FinishLineCheckered",
+    "path":"sprites/spr_FinishLineCheckered/spr_FinishLineCheckered.yy",
   },
   "spriteMaskId":null,
   "visible":true,

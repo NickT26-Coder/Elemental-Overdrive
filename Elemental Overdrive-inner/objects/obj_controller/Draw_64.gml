@@ -1,6 +1,6 @@
 /// @description Insert description here
 // Scoreboard in rm_end
-if global.room_number == 4 {
+if global.room_number == 3 {
 	view_midw = surface_get_width(application_surface)/2;
 	view_midh  = surface_get_height(application_surface)/2;
 	draw_set_alpha(0.9)
