@@ -1,26 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-//gamepads = [];
-castQue = [];
 
-latestCast = undefined
+// Inherit the parent event
+event_inherited();
 
-fireMana = 0;
-waterMana = 0;
-airMana = 0;
-earthMana = 0; 
-
-waterCast = "Water"
-airCast = "Air"
-fireCast = "Fire"
-earthCast = "Earth"
-
-
-direction = 90;
-speed = 0
-// Sets animation to off
-image_speed = 0
-
-//Scaling t o fit map
-image_xscale=.75
-image_yscale=.75

@@ -15,8 +15,8 @@
     "path":"folders/Objects/Mana.yy",
   },
   "parentObjectId":{
-    "name":"objParentPickup",
-    "path":"objects/objParentPickup/objParentPickup.yy",
+    "name":"objParentMana",
+    "path":"objects/objParentMana/objParentMana.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
