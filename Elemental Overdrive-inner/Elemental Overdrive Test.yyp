@@ -27,7 +27,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Elemental Overdrive Test",
   "resources":[
@@ -73,6 +73,7 @@
     {"id":{"name":"spr_lavaTileset","path":"sprites/spr_lavaTileset/spr_lavaTileset.yy",},},
     {"id":{"name":"spr_randomPickup","path":"sprites/spr_randomPickup/spr_randomPickup.yy",},},
     {"id":{"name":"spr_results","path":"sprites/spr_results/spr_results.yy",},},
+    {"id":{"name":"spr_spellHudUI","path":"sprites/spr_spellHudUI/spr_spellHudUI.yy",},},
     {"id":{"name":"spr_text_box","path":"sprites/spr_text_box/spr_text_box.yy",},},
     {"id":{"name":"spr_title_screen","path":"sprites/spr_title_screen/spr_title_screen.yy",},},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
