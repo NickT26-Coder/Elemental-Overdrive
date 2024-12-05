@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"objRockSpell",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"objRockSpell",
   "overriddenProperties":[],
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEarthMana",
-    "path":"sprites/sprEarthMana/sprEarthMana.yy",
+    "name":"spr_rock",
+    "path":"sprites/spr_rock/spr_rock.yy",
   },
   "spriteMaskId":null,
   "visible":true,

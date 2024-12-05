@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite29",
-    "path":"sprites/Sprite29/Sprite29.yy",
+    "name":"spr_fireBreathMiddle",
+    "path":"sprites/spr_fireBreathMiddle/spr_fireBreathMiddle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

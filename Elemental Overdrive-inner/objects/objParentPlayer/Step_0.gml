@@ -87,6 +87,15 @@ if (array_length(global.gamepads) > 0)
 				else if (castQue[0] == airCast) 
 				{
 		                show_debug_message("air");
+						//Creates smoke boost effect
+						var boost = instance_create_depth(
+							x - lengthdir_x(40, direction+30),
+							y - lengthdir_y(40, direction+30), 
+							depth + 1, 
+							objSmoke
+						);
+						boost.sprite_index = spr_smallBoost;
+						boost.image_angle = image_angle;
 		                speed *= 2;
 		                alarm_set(0, 30);
 		        }
@@ -156,6 +165,17 @@ if (array_length(global.gamepads) > 0)
 	            else if ((element1 == airCast && element2 == airCast)) 
 				{
 	                show_debug_message("air + air");
+					//Creates large smoke effect
+						var boost = instance_create_depth(
+							x - lengthdir_x(64, direction+30),
+							y - lengthdir_y(64, direction+30), 
+							depth + 1, 
+							objSmoke
+						);
+						boost.sprite_index = spr_smallBoost;
+						boost.image_angle = image_angle;
+						boost.image_xscale = 2;
+						boost.image_yscale = 2;
 					speed *= 2.5;
 		            alarm_set(0, 60);
 	            } 
