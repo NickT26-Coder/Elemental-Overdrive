@@ -6,9 +6,11 @@ if global.room_number == 3 {
 	draw_set_alpha(0.9)
 	//if player 1 wins subimg = 0
 	draw_sprite(spr_results,0, view_midw,view_midh);
-	//else subimg = 1
+	//else
 	//draw_sprite(spr_results, 1, view_midw, view_midh);
 	draw_set_alpha(1)
 	//draw_text for each player's lap time
+	//draw_text(50, 50, obj_hud_player1.timestr)
 	//draw_text for fastest lap
+	//draw_text(50, 100, obj_hud_player1.timestr)
 }
