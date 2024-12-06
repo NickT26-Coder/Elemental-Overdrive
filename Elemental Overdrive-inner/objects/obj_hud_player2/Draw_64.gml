@@ -1,18 +1,60 @@
 /// @description Insert description here
-// You can write your code in this editor
 //Switch statement for checking castQue each case is an element type
-// case "Air"
-	draw_sprite_ext(spr_windPickup, 0, x - 1525, y + 200, 5, 5, 0, c_white, 1)
-// case "Fire"
-	draw_sprite_ext(spr_firePickup, 0, x - 1425, y + 200, 5, 5, 0, c_white, 1)
-// case "Water"
-	draw_sprite_ext(spr_waterPickup, 0, x - 1325, y + 200, 5, 5, 0, c_white, 1)
-// case "Earth"
-	draw_sprite_ext(spr_earthPickup, 0, x - 1225, y + 200, 5, 5, 0, c_white, 1)
+var i = 0
+var spriteVar = undefined
+//Readjust x for the viewport
+var new_x = 0
+var new_y = 840
+
 	
+	for (i = 0; i < array_length(objPlayer2.castQue); i++) 
+{
+	switch (objPlayer2.castQue[i]) {
+ case "Air":
+		spriteVar = spr_waterPickup
+	break;
+ case "Fire":
+		spriteVar = spr_firePickup
+	break;
+ case "Water":
+		spriteVar = spr_waterPickup
+	break;
+ case "Earth":
+		spriteVar = spr_earthPickup
+	break;
+ default:
+	break;
+	}
 	
-//Display Timer
-//Lap Count
-//Current Place
-	draw_sprite_ext(spr_first_place, 0, x - 1100, y + 15, 1, 1, 0, c_white, 1)
-	draw_sprite_ext(spr_second_place, 0, x - 1100, y + 15, 1, 1, 0, c_white, 1)
+	//slot 1
+	if(i == 0)
+	{
+		draw_sprite_ext(spriteVar, 0, new_x + 1700, new_y + 200, 5, 5, 0, c_white, 1)
+	}
+	//slot 2
+	if(i == 1)
+	{
+		draw_sprite_ext(spriteVar,0, new_x + 1500, new_y + 200, 5, 5, 0, c_white, 1)
+	}
+}
+
+//Amount of elements
+	draw_text_transformed(new_x + 1670, new_y, objParentPlayer.airMana, 1.5, 1.5, 0)
+	draw_text_transformed(new_x + 1670, new_y + 105, objParentPlayer.fireMana, 1.5, 1.5, 0)
+	draw_text_transformed(new_x + 1835, new_y, objParentPlayer.waterMana, 1.5, 1.5, 0)
+	draw_text_transformed(new_x + 1845, new_y + 110, objParentPlayer.earthMana, 1.5, 1.5, 0)
+//Only in Main Race Room and able to move
+if global.room_number == 2 {
+//Display Timer after countdown
+	//Start Timer when race starts
+	draw_text_transformed(new_x + 1090, new_y - 5, global.stopwatch_p1, 2, 2, 0)
+	//Stop Timer for each player upon finishing
+	//Save lap time in variable for end screen
+//Lap Count, lap variable
+	draw_text_transformed(new_x + 1060, new_y + 35, objFinishLine.lapCounter, 2, 2, 0)
+//Current Place, variable definition boolean "isFirst" that switches
+//if isFirst then
+	draw_sprite_ext(spr_first_place, 0, new_x + 1500, new_y + 30, 1, 1, 0, c_white, 1)
+//else
+	draw_sprite_ext(spr_second_place, 0, new_x + 1500, new_y + 30, 1, 1, 0, c_white, 1)
+}

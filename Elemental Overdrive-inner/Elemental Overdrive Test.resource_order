@@ -7,9 +7,9 @@
     {"name":"SpellObjects","order":11,"path":"folders/Objects/SpellObjects.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_countdown","order":20,"path":"objects/obj_countdown/obj_countdown.yy",},
     {"name":"obj_hud_player1","order":18,"path":"objects/obj_hud_player1/obj_hud_player1.yy",},
     {"name":"obj_hud_player2","order":19,"path":"objects/obj_hud_player2/obj_hud_player2.yy",},
-    {"name":"obj_stopWatch","order":12,"path":"objects/obj_stopWatch/obj_stopWatch.yy",},
     {"name":"obj_tutorialFinishLine","order":14,"path":"objects/obj_tutorialFinishLine/obj_tutorialFinishLine.yy",},
     {"name":"obj_tutorialHandler","order":15,"path":"objects/obj_tutorialHandler/obj_tutorialHandler.yy",},
     {"name":"objEarthMana","order":1,"path":"objects/objEarthMana/objEarthMana.yy",},

@@ -10,7 +10,9 @@ if global.room_number == 3 {
 	//draw_sprite(spr_results, 1, view_midw, view_midh);
 	draw_set_alpha(1)
 	//draw_text for each player's lap time
-	//draw_text(50, 50, obj_hud_player1.timestr)
+	draw_text_transformed(400, 400, global.timestr_p1, 3, 3,0)
+	draw_text_transformed(1130, 400, global.timestr_p2, 3, 3, 0)
 	//draw_text for fastest lap
-	//draw_text(50, 100, obj_hud_player1.timestr)
+	draw_text_transformed(400, 550, global.fastest_lap_p1, 3, 3, 0)
+	draw_text_transformed(1130, 550, global.fastest_lap_p2, 3, 3, 0)
 }

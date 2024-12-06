@@ -18,6 +18,8 @@ airCast = "Air"
 fireCast = "Fire"
 earthCast = "Earth"
 
+lapCount = 0
+
 
 direction = 90;
 speed = 0
