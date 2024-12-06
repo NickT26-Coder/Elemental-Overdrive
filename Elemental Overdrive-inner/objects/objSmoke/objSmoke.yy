@@ -1,10 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"objSmoke",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"objSmoke",
   "overriddenProperties":[],
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_smallBoost",
-    "path":"sprites/spr_smallBoost/spr_smallBoost.yy",
+    "name":"spr_Smoke",
+    "path":"sprites/spr_Smoke/spr_Smoke.yy",
   },
   "spriteMaskId":null,
   "visible":true,

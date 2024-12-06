@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_mine",
+    "path":"sprites/spr_mine/spr_mine.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
