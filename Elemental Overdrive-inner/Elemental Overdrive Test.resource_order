@@ -26,7 +26,6 @@
     {"name":"objShield","order":1,"path":"objects/objShield/objShield.yy",},
     {"name":"objSmoke","order":9,"path":"objects/objSmoke/objSmoke.yy",},
     {"name":"objTornado","order":8,"path":"objects/objTornado/objTornado.yy",},
-    {"name":"objWall","order":13,"path":"objects/objWall/objWall.yy",},
     {"name":"objWaterMana","order":3,"path":"objects/objWaterMana/objWaterMana.yy",},
     {"name":"rm_credits","order":4,"path":"rooms/rm_credits/rm_credits.yy",},
     {"name":"rm_end","order":5,"path":"rooms/rm_end/rm_end.yy",},
