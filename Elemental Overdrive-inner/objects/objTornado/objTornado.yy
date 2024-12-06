@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Tornado",
+    "path":"sprites/spr_Tornado/spr_Tornado.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_IceGust",
+    "path":"sprites/spr_IceGust/spr_IceGust.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

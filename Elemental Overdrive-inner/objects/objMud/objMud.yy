@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite27",
-    "path":"sprites/Sprite27/Sprite27.yy",
+    "name":"spr_MudSplash",
+    "path":"sprites/spr_MudSplash/spr_MudSplash.yy",
   },
   "spriteMaskId":null,
   "visible":true,
