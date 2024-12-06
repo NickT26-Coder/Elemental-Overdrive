@@ -31,6 +31,9 @@
     "name":"Sprite18",
     "path":"sprites/Sprite18/Sprite18.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sprite18",
+    "path":"sprites/Sprite18/Sprite18.yy",
+  },
   "visible":false,
 }
