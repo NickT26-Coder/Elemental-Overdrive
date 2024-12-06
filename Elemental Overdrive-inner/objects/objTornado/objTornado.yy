@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"objTornado",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objParentPlayer","path":"objects/objParentPlayer/objParentPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"objTornado",
   "overriddenProperties":[],
@@ -28,8 +32,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
+<<<<<<< Updated upstream
     "name":"spr_Tornado",
     "path":"sprites/spr_Tornado/spr_Tornado.yy",
+=======
+    "name":"Sprite46",
+    "path":"sprites/Sprite46/Sprite46.yy",
+>>>>>>> Stashed changes
   },
   "spriteMaskId":null,
   "visible":true,

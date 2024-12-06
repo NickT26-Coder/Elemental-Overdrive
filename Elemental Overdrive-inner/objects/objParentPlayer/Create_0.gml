@@ -10,8 +10,8 @@ waterMana = 0;
 airMana = 0;
 earthMana = 0;
 
-momentum = undefined
-flamethrower = false
+origin = undefined
+
 
 waterCast = "Water"
 airCast = "Air"
@@ -30,6 +30,20 @@ image_speed = 0
 image_xscale=.75
 image_yscale=.75
 
+//aiming
 aimTrue = false
-
 aimInstance = instance_create_depth(x,y,depth, objAim)
+
+//blinking
+blinkTimer = 0;   
+blinkInterval = 10; 
+blink = true; 
+
+
+//spell variables
+
+//status effects
+stun = false
+slow = false
+immune = false
+stunImmune = false

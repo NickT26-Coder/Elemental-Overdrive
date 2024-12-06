@@ -1,7 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"objSmoke",
+<<<<<<< Updated upstream
   "eventList":[],
+=======
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objParentPlayer","path":"objects/objParentPlayer/objParentPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+>>>>>>> Stashed changes
   "managed":true,
   "name":"objSmoke",
   "overriddenProperties":[],
@@ -23,13 +31,20 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"originPlayer","filters":[],"listItems":[],"multiselect":false,"name":"originPlayer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
+<<<<<<< Updated upstream
     "name":"spr_Smoke",
     "path":"sprites/spr_Smoke/spr_Smoke.yy",
+=======
+    "name":"Sprite47",
+    "path":"sprites/Sprite47/Sprite47.yy",
+>>>>>>> Stashed changes
   },
   "spriteMaskId":null,
   "visible":true,

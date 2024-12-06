@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-airMana += 1;
+self.airMana += 1;

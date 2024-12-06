@@ -11,7 +11,7 @@ var new_y = 840
 {
 	switch (objPlayer2.castQue[i]) {
  case "Air":
-		spriteVar = spr_waterPickup
+		spriteVar = spr_windPickup
 	break;
  case "Fire":
 		spriteVar = spr_firePickup
@@ -39,10 +39,14 @@ var new_y = 840
 }
 
 //Amount of elements
-	draw_text_transformed(new_x + 1670, new_y, objParentPlayer.airMana, 1.5, 1.5, 0)
-	draw_text_transformed(new_x + 1670, new_y + 105, objParentPlayer.fireMana, 1.5, 1.5, 0)
-	draw_text_transformed(new_x + 1835, new_y, objParentPlayer.waterMana, 1.5, 1.5, 0)
-	draw_text_transformed(new_x + 1845, new_y + 110, objParentPlayer.earthMana, 1.5, 1.5, 0)
+	//draw_text_transformed(new_x + 60, new_y - 5, objPlayer1.waterMana, 1.5, 1.5, 0)
+	//draw_text_transformed(new_x + 60, new_y + 100, objPlayer1.earthMana, 1.5, 1.5, 0)
+	//draw_text_transformed(new_x + 235, new_y - 5, objPlayer1.fireMana, 1.5, 1.5, 0)
+	//draw_text_transformed(new_x + 235, new_y + 100,objPlayer1.airMana , 1.5, 1.5, 0)
+	draw_text_transformed(new_x + 1670, new_y, objPlayer2.waterMana, 1.5, 1.5, 0)
+	draw_text_transformed(new_x + 1670, new_y + 105, objPlayer2.earthMana, 1.5, 1.5, 0)
+	draw_text_transformed(new_x + 1835, new_y,objPlayer2.fireMana , 1.5, 1.5, 0)
+	draw_text_transformed(new_x + 1845, new_y + 110, objPlayer2.airMana, 1.5, 1.5, 0)
 //Only in Main Race Room and able to move
 if global.room_number == 2 {
 //Display Timer after countdown

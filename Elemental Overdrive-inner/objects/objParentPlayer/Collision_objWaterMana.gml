@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-waterMana += 1
+self.waterMana += 1
+
+show_debug_message("gotwatermana")

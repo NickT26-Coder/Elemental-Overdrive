@@ -8,13 +8,6 @@ if (array_length(global.gamepads) > 0)
 	var vaxisr = gamepad_axis_value(playerNumber, gp_axisrv);
 	var aim = point_direction(0,0,haxisr,vaxisr) 
 	
-	if (speed > 0 && gamepad_button_check_pressed(playerNumber,gp_shoulderr))
-	{
-		momentum = speed
-	}
-		
-	
-	
 
 	aimInstance.direction = aim
 	aimInstance.x = x
@@ -27,9 +20,7 @@ if (array_length(global.gamepads) > 0)
 		aimInstance.image_angle = image_angle
 	}
 			
-		
 
-	
 	// Set elements to latestCast based on button press
 	if (gamepad_button_check_pressed(playerNumber, gp_face3) && array_length(castQue) < 2) // X Button
 	{
@@ -76,13 +67,15 @@ if (array_length(global.gamepads) > 0)
 				if (castQue[0] == waterCast) 
 				{
 					show_debug_message("water");
-					instance_create_depth(x,y,depth,objShield,
+					var water =instance_create_depth(x,y,depth,objShield,
 						{
-							target: id,
 							image_xscale: 1,
 							image_yscale: 1
 							
 						})
+						
+						water.origin = id
+					
 		        } 
 				else if (castQue[0] == airCast) 
 				{
@@ -92,7 +85,7 @@ if (array_length(global.gamepads) > 0)
 							x - lengthdir_x(40, direction+30),
 							y - lengthdir_y(40, direction+30), 
 							depth + 1, 
-							objSmoke
+							objDash
 						);
 						boost.sprite_index = spr_smallBoost;
 						boost.image_angle = image_angle;
@@ -103,11 +96,8 @@ if (array_length(global.gamepads) > 0)
 				{
 		           show_debug_message("fire");
 
-					instance_create_depth(x, y, depth, objFire, 
-					{	
-						target: id
-								
-					});
+					var fire = instance_create_depth(x, y, depth, objFire)
+					fire.origin = id;
 		        }
 		        else if (castQue[0] == earthCast) 
 				{
@@ -131,11 +121,12 @@ if (array_length(global.gamepads) > 0)
 				  
 				
 		          //shoot rock
-		          instance_create_depth(x, y, depth, objRockSpell, 
+		         var rock = instance_create_depth(x, y, depth, objRockSpell, 
 					{
 						speed: 5,
 		                direction: aim
 					});
+					rock.origin = id
 		        }
 				
 				break;
@@ -150,17 +141,25 @@ if (array_length(global.gamepads) > 0)
 	            if ((element1 == waterCast && element2 == waterCast)) 
 				{
 	                show_debug_message("water + water");
-					instance_create_depth(x,y,depth,objShield,
+					var shield = instance_create_depth(x,y,depth,objShield,
 						{
-							target: id,
 							image_xscale: 1,
-							image_yscale: 1
-							
+							image_yscale: 1	
 						})
+						shield.origin = id;
+						
 	            } 
 	            else if ((element1 == fireCast && element2 == fireCast)) 
 				{
 	                show_debug_message("fire + fire");
+					var fireball = instance_create_depth(x, y, depth, objFireBall, 
+					{
+						speed: 5,
+		                direction: aim
+					});
+					
+					fireball.origin = id;
+					
 	            } 
 	            else if ((element1 == airCast && element2 == airCast)) 
 				{
@@ -170,7 +169,7 @@ if (array_length(global.gamepads) > 0)
 							x - lengthdir_x(64, direction+30),
 							y - lengthdir_y(64, direction+30), 
 							depth + 1, 
-							objSmoke
+							objDash
 						);
 						boost.sprite_index = spr_smallBoost;
 						boost.image_angle = image_angle;
@@ -182,22 +181,93 @@ if (array_length(global.gamepads) > 0)
 	            else if ((element1 == earthCast && element2 == earthCast)) 
 				{
 	                show_debug_message("earth + earth");
-					instance_create_depth(x,y,depth,objEarthquake,
-						{
-							target: id,
+					var earthquake =instance_create_depth(x,y,depth,objEarthquake,
+						{	
 							image_xscale: 1,
-							image_yscale: 1
-							
+							image_yscale: 1			
 						})
+						earthquake.origin = id;
 	            } 
 	            else if (array_contains(castQue,earthCast) && array_contains(castQue,waterCast)) 
 				{
 	                show_debug_message("earth + water");
 					
-					instance_create_depth(x,y,depth,objMud,
+					var mud = instance_create_depth(x,y,depth,objMud)
+					
+					mud.origin = id;
+					
+					
+	            }
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,fireCast)) 
+				{
+	                show_debug_message("earth + fire");
+					
+					var mine = instance_create_depth(x,y,depth,objMine)
+					
+					mine.origin = id;
+					
+	            }
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,airCast)) 
+				{
+	                show_debug_message("earth + wind");
+					
+					  
+		          var tornado = instance_create_depth(x, y, depth, objTornado, 
+					{	
+						
+						speed: 2.5 + speed,
+		                direction: aim
+					});
+					
+					tornado.origin = id;
+					
+					with(objParentPlayer)
 					{
-						originPlayer: id
-					})
+						if (id != other.id)
+						{
+							
+						instance_create_depth(x, y, depth, objHoming)
+						
+						}
+					}
+		        
+	            }
+				else if (array_contains(castQue,fireCast) && array_contains(castQue,airCast)) 
+				{
+	                show_debug_message("fire + earth");
+					
+					var smoke = instance_create_depth(x,y,depth,objSmoke)
+					
+						smoke.origin = id;
+	            }
+				else if (array_contains(castQue,fireCast) && array_contains(castQue,waterCast)) 
+				{
+	                show_debug_message("fire + water");
+					
+					//var shock = instance_create_depth(x,y,depth,objShock)
+					
+					with(objParentPlayer)
+					{
+						if (id != other.id)
+						{
+							
+						instance_create_depth(x,y,depth,objShock)
+						
+						}
+					}
+	            }
+				else if (array_contains(castQue,waterCast) && array_contains(castQue,airCast)) 
+				{
+	                show_debug_message("water + air");
+					
+					var iceGust = instance_create_depth(x, y, depth, objIceGust, 
+					{	
+						speed: 0.5 + speed,
+		                direction: aim
+								
+					});
+					
+					iceGust.origin = id;
 	            }
 				else
            
@@ -219,12 +289,12 @@ if (array_length(global.gamepads) > 0)
 
 	// Player Movement
 
-	if  gamepad_button_check(playerNumber,gp_shoulderrb) && speed < topSpeed 
+	if  gamepad_button_check(playerNumber,gp_shoulderrb) && speed < topSpeed && stun == false 
 	{
 		speed += accel;  //Accelerate forward
 	}
 
-	if gamepad_button_check(playerNumber,gp_shoulderlb)  && speed > minSpeed
+	if gamepad_button_check(playerNumber,gp_shoulderlb)  && speed > minSpeed  && stun == false
 	{
 		speed -= accel;  //Reverse
 	}
@@ -249,5 +319,18 @@ if (array_length(global.gamepads) > 0)
 			speed += 0.02
 		}
 	}
+	
+	//blinking when stunned
+	if(stun = true)
+	{
+		blinkTimer += 1;
+	}
+	
+	if (blinkTimer >= blinkInterval) 
+	{
+		blinkTimer = 0; 
+		blink = !blink; 
+	}
+
 	
 }
