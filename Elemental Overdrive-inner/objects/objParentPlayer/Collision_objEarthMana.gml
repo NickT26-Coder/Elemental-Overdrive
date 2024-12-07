@@ -1,3 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-self.earthMana += 1
+
+
+if (objParentMana.mana_reset == false)
+{
+	
+	objParentMana.mana_reset =true;
+	self.earthMana += 1;
+	
+}

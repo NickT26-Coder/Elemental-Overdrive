@@ -6,5 +6,5 @@ if (origin == other.id)
 }
 else
 {
-	
+	scrSlow(1,5)
 }

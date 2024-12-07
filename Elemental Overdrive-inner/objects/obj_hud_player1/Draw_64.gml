@@ -73,4 +73,19 @@ var winning = false
 	else {
 		draw_sprite_ext(spr_second_place, 0, new_x + 850, new_y + 30, 1, 1, 0, c_white, 1)
 	}
+	
+	
+	//low mana
+	if objPlayer1.waterMana == 0 {
+        draw_sprite_ext(spr_waterPickup_none, 0, new_x + 600, new_y + 175, 4, 4, 0, c_white, 1)
+    }
+    if (objPlayer1.airMana == 0) {
+        draw_sprite_ext(spr_windPickup_none, 0, new_x + 525, new_y + 175, 4, 4, 0, c_white, 1)
+    }
+    if (objPlayer1.fireMana == 0) {
+        draw_sprite_ext(spr_firePickup_none, 0, new_x + 450, new_y + 175, 4, 4, 0, c_white, 1)
+    }
+    if (objPlayer1.earthMana == 0) {
+        draw_sprite_ext(spr_earthPickup_none, 0, new_x + 375, new_y + 175, 4, 4, 0, c_white, 1)
+    }
 }

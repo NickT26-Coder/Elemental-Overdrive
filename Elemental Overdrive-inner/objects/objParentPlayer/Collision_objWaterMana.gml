@@ -1,5 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-self.waterMana += 1
 
-show_debug_message("gotwatermana")
+
+if (objParentMana.mana_reset == false)
+{
+	
+	objParentMana.mana_reset =true;
+	self.waterMana += 1
+	
+}

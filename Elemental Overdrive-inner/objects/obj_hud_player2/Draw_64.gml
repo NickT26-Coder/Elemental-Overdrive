@@ -71,4 +71,17 @@ if global.room_number == 2 {
 	else {
 		draw_sprite_ext(spr_second_place, 0, new_x + 1500, new_y + 30, 1, 1, 0, c_white, 1)
 	}
+	
+	if objPlayer2.waterMana == 0 {
+        draw_sprite_ext(spr_waterPickup_none, 0, new_x + 600, new_y + 175, 4, 4, 0, c_white, 1)
+    }
+    if (objPlayer2.airMana == 0) {
+        draw_sprite_ext(spr_windPickup_none, 0, new_x + 525, new_y + 175, 4, 4, 0, c_white, 1)
+    }
+    if (objPlayer2.fireMana == 0) {
+        draw_sprite_ext(spr_firePickup_none, 0, new_x + 450, new_y + 175, 4, 4, 0, c_white, 1)
+    }
+    if (objPlayer2.earthMana == 0) {
+        draw_sprite_ext(spr_earthPickup_none, 0, new_x + 375, new_y + 175, 4, 4, 0, c_white, 1)
+    }
 }
