@@ -57,14 +57,14 @@ if (array_length(global.gamepads) > 0)
 	}
 
 	// Casting
-	if (gamepad_button_check_pressed(playerNumber, gp_shoulderl)) // Left Shoulder
+	if (gamepad_button_check_pressed(playerNumber, gp_shoulderl) && stun == false) // Left Shoulder
 	{
 	    // Checks how many elements in queue
 	    switch (array_length(castQue))
 	    {
 	        case 1: // One element
 			
-				if (castQue[0] == waterCast && waterMana == 0 ) 
+				if (castQue[0] == waterCast && waterMana >= 0 ) 
 				{
 					show_debug_message("water");
 					var water =instance_create_depth(x,y,depth,objShield,
@@ -86,7 +86,7 @@ if (array_length(global.gamepads) > 0)
 					notEnoughMana = true
 					castQue = array_create(0);
 				}
-				else if (castQue[0] == airCast && airMana == 0 ) 
+				else if (castQue[0] == airCast && airMana >= 0 ) 
 				{
 		                show_debug_message("air");
 						//Creates smoke boost effect
@@ -109,7 +109,7 @@ if (array_length(global.gamepads) > 0)
 					castQue = array_create(0);
 				}
 				
-		        else if (castQue[0] == fireCast && fireMana == 0) 
+		        else if (castQue[0] == fireCast && fireMana >= 0) 
 				{
 		           show_debug_message("fire");
 
@@ -121,7 +121,7 @@ if (array_length(global.gamepads) > 0)
 					notEnoughMana = true
 					castQue = array_create(0);
 				}
-		        else if (castQue[0] == earthCast && earthMana == 0) 
+		        else if (castQue[0] == earthCast && earthMana >= 0) 
 				{
 					
 				  var fwdOrBack = 0
@@ -145,7 +145,7 @@ if (array_length(global.gamepads) > 0)
 		          //shoot rock
 		         var rock = instance_create_depth(x, y, depth, objRockSpell, 
 					{
-						speed: 5,
+						speed: 5 + speed,
 		                direction: aim
 					});
 					rock.origin = id
@@ -369,11 +369,11 @@ if (array_length(global.gamepads) > 0)
 	{
 		speed -= accel;  //Reverse
 	}
-	if haxis < 0
+	if haxis < 0 && stun == false
 	{
 		direction += turnSpeed 
 	}
-	if haxis > 0
+	if haxis > 0 && stun == false
 	{
 		direction -= turnSpeed 
 	}
@@ -402,6 +402,11 @@ if (array_length(global.gamepads) > 0)
 		{
 			speed += 0.02
 		}
+	}
+	
+	if (stun == true && speed >= 0)
+	{
+		speed -= 0.10
 	}
 	
 	//blinking when stunned
