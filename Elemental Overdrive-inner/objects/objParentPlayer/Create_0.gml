@@ -36,7 +36,7 @@ aimInstance = instance_create_depth(x,y,depth, objAim)
 
 //blinking
 blinkTimer = 0;   
-blinkInterval = 10; 
+blinkInterval = 11; 
 blink = true; 
 
 

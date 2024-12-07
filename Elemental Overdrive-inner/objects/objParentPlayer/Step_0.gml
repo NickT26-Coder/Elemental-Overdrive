@@ -321,16 +321,22 @@ if (array_length(global.gamepads) > 0)
 	}
 	
 	//blinking when stunned
-	if(stun = true)
+	if(stun == true)
 	{
-		blinkTimer += 1;
+		blinkTimer += 2;
 	}
 	
 	if (blinkTimer >= blinkInterval) 
 	{
 		blinkTimer = 0; 
-		blink = !blink; 
+		blink = !blink;
 	}
+	if (blinkTimer < blinkInterval && stun == false)
+	{
+		blink = true
+	}
+	
+	
 
 	
 }

@@ -1,12 +1,22 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scrStun(player,stunDuration,stunImmunetime)
+
+
+function scrStun(stunDuration,stunImmuneTime)
 {
-	if(player.stunImmune = false)
+	if (origin != other.id) 
 	{
-		player.stun = true
-		player.stunImmune = true
-		player.alarm_set(11,stunDuration)
-		player.alarm_set(9,stunDuration+stunImmunetime)
+		if (!other.stunImmune) 
+		{
+        show_debug_message("Stunning player: " + string(other.id));
+        other.stun = true;
+        other.stunImmune = true;
+        other.alarm[11] = stunDuration; // End stun
+        other.alarm[9] = stunDuration + stunImmuneTime; // End immunity
+		} 
+		else 
+		{
+        show_debug_message("Player is stun immune: " + string(other.id));
+		}
 	}
 }
