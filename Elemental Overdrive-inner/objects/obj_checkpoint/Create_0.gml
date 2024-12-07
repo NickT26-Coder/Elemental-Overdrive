@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-// Reenable player movement
-global.start = true
-instance_destroy()
+passed_p1 = false
+passed_p2 = false

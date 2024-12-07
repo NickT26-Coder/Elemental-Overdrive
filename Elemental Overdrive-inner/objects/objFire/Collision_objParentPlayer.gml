@@ -1,5 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-// Reenable player movement
-global.start = true
-instance_destroy()
+
+if (origin == other.id)
+{
+    exit
+}
+else
+{
+	scrStun(10,4)
+}

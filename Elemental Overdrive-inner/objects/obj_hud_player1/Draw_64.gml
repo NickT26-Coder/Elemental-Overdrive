@@ -30,12 +30,12 @@ var new_y = 840
 	//slot 1
 	if(i == 0)
 	{
-		draw_sprite_ext(spriteVar, 0, new_x + 700, new_y + 200, 5, 5, 0, c_white, 1)
+		draw_sprite_ext(spriteVar, 0, new_x + 900, new_y + 175, 5, 5, 0, c_white, 1)
 	}
 	//slot 2
 	if(i == 1)
 	{
-		draw_sprite_ext(spriteVar,0, new_x + 500, new_y + 200, 5, 5, 0, c_white, 1)
+		draw_sprite_ext(spriteVar,0, new_x + 700, new_y + 175, 5, 5, 0, c_white, 1)
 	}
 }
 
@@ -54,9 +54,23 @@ if global.room_number == 2 {
 	//Save lap time in variable for end screen
 //Lap Count, lap variable
 	draw_text_transformed(new_x + 428, new_y + 30, objFinishLine.lapCounter, 2, 2, 0)
-//Current Place, variable definition boolean "isFirst" that switches
-//if isFirst then
-	draw_sprite_ext(spr_first_place, 0, new_x + 850, new_y + 30, 1, 1, 0, c_white, 1)
-//else
-	draw_sprite_ext(spr_second_place, 0, new_x + 850, new_y + 30, 1, 1, 0, c_white, 1)
+//Current Place
+var winning = false
+	if objPlayer1.lapCount == objPlayer2.lapCount and objPlayer1.checkpoint_number == objPlayer2.checkpoint_number {
+			if objPlayer1.checkpoint_distance < objPlayer2.checkpoint_distance {
+				winning  = true	
+			}
+	}
+	else if objPlayer1.lapCount == objPlayer2.lapCount and objPlayer1.checkpoint_number > objPlayer2.checkpoint_number {
+		winning = true	
+	}
+	else if objPlayer1.lapCount > objPlayer2.lapCount {
+		winning = true	
+	}
+	if winning {
+		draw_sprite_ext(spr_first_place, 0, new_x + 850, new_y + 30, 1, 1, 0, c_white, 1)
+	}
+	else {
+		draw_sprite_ext(spr_second_place, 0, new_x + 850, new_y + 30, 1, 1, 0, c_white, 1)
+	}
 }

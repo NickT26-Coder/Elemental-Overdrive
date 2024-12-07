@@ -1,6 +1,6 @@
 /// @description Insert description here
 // Disable player movmeent
-objParentPlayer.accel = 0
+global.start = false
 //Alarm 0 is 4 sconds to include "GO!"
 alarm[0] = 240
 //Second Counter

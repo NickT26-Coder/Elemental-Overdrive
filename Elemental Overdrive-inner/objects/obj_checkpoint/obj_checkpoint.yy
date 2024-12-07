@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objFinishLine",
+  "%Name":"obj_checkpoint",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objPlayer1","path":"objects/objPlayer1/objPlayer1.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objPlayer2","path":"objects/objPlayer2/objPlayer2.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objFinishLine",
+  "name":"obj_checkpoint",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -35,9 +32,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_FinishLineCheckered",
-    "path":"sprites/spr_FinishLineCheckered/spr_FinishLineCheckered.yy",
+    "name":"sprFinishLine",
+    "path":"sprites/sprFinishLine/sprFinishLine.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
