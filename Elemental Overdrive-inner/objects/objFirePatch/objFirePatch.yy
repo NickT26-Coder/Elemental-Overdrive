@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite44",
-    "path":"sprites/Sprite44/Sprite44.yy",
+    "name":"spr_FirePatch",
+    "path":"sprites/spr_FirePatch/spr_FirePatch.yy",
   },
   "spriteMaskId":null,
   "visible":true,
