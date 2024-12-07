@@ -6,5 +6,6 @@ if (origin == other.id)
 }
 else
 {
-	
+	scrStun(180,60)
+	instance_destroy(self)
 }

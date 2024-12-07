@@ -4,6 +4,8 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objParentPlayer","path":"objects/objParentPlayer/objParentPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objMine",
@@ -33,13 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-<<<<<<< Updated upstream
     "name":"spr_mine",
     "path":"sprites/spr_mine/spr_mine.yy",
-=======
-    "name":"Sprite42",
-    "path":"sprites/Sprite42/Sprite42.yy",
->>>>>>> Stashed changes
   },
   "spriteMaskId":null,
   "visible":true,

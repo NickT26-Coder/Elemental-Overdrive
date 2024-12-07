@@ -22,5 +22,7 @@ else
 {
     // The fireball hit a different player
     show_debug_message("Player hit by another player's fireball!");
+	scrStun(180,60)
 	instance_create_depth(self.x,self.y,depth,objFirePatch)
+	instance_destroy(self)
 }

@@ -75,6 +75,10 @@ if (array_length(global.gamepads) > 0)
 						})
 						
 						water.origin = id
+						immune = true
+						stunImmune = true
+						alarm[1] = 180
+						shieldOn = true
 					
 		        } 
 				else if (castQue[0] == airCast) 
@@ -147,6 +151,10 @@ if (array_length(global.gamepads) > 0)
 							image_yscale: 1	
 						})
 						shield.origin = id;
+						immune = true
+						stunImmune = true
+						alarm[1] = 180
+						shieldOn = true
 						
 	            } 
 	            else if ((element1 == fireCast && element2 == fireCast)) 
@@ -262,7 +270,7 @@ if (array_length(global.gamepads) > 0)
 					
 					var iceGust = instance_create_depth(x, y, depth, objIceGust, 
 					{	
-						speed: 0.5 + speed,
+						speed: 10 + speed,
 		                direction: aim
 								
 					});
@@ -306,6 +314,19 @@ if (array_length(global.gamepads) > 0)
 	{
 		direction -= turnSpeed 
 	}
+	
+	//bounce off wall
+	if (place_meeting(x + lengthdir_x(speed, direction), y, objWall)) 
+	{
+    x -= lengthdir_x(13, direction); 
+	}
+
+	if (place_meeting(x, y + lengthdir_y(speed, direction), objWall)) 
+	{
+    y -= lengthdir_y(13, direction); 
+	
+	}
+	
 	
 	//slow down when not forward or reversing
 	if !gamepad_button_check(playerNumber,gp_shoulderrb) && !gamepad_button_check(playerNumber,gp_shoulderlb)

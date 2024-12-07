@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_IceGust",
-    "path":"sprites/spr_IceGust/spr_IceGust.yy",
+    "name":"spr_gust",
+    "path":"sprites/spr_gust/spr_gust.yy",
   },
   "spriteMaskId":null,
   "visible":true,

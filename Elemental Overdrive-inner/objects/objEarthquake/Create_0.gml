@@ -6,4 +6,4 @@ image_xscale = 1.5
 image_speed =  -1
 origin = undefined
 stunDuration = 120
-stunImmuneTime = 4
+stunImmuneTime = 30

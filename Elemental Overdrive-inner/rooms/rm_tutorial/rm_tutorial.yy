@@ -98,6 +98,7 @@
     {"name":"inst_7EE06AD0","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_637305EC","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_7AA086E8","path":"rooms/rm_tutorial/rm_tutorial.yy",},
+    {"name":"inst_2479CA0B","path":"rooms/rm_tutorial/rm_tutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -194,6 +195,7 @@
         {"$GMRInstance":"v1","%Name":"inst_7EE06AD0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EE06AD0","objectId":{"name":"objWall","path":"objects/objWall/objWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-179.6647,"scaleX":1.0,"scaleY":1.0,"x":624.0,"y":208.0,},
         {"$GMRInstance":"v1","%Name":"inst_637305EC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_637305EC","objectId":{"name":"objWall","path":"objects/objWall/objWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-179.6647,"scaleX":1.0,"scaleY":1.5,"x":592.0995,"y":176.99971,},
         {"$GMRInstance":"v1","%Name":"inst_7AA086E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7AA086E8","objectId":{"name":"objWall","path":"objects/objWall/objWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-269.937,"scaleX":1.0,"scaleY":6.0625,"x":576.0,"y":36.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2479CA0B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2479CA0B","objectId":{"name":"objBlindControler","path":"objects/objBlindControler/objBlindControler.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":512.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tutorial_high","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tutorial_high","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           -50,-2147483648,-11,25,-109,-2147483648,-11,25,-95,-2147483648,12,36,37,36,37,36,37,36,37,36,37,257,

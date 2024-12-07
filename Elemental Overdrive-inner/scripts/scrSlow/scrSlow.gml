@@ -1,10 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scrSlow(player,slowDuration, slowAmount)
+function scrSlow(slowDuration, slowAmount)
 {	
-	player.Slow = true
+	if (origin != other.id) 
+	{
+	other.slow = true
 	
-	player.speed -= slowAmount
+	other.speed -= slowAmount
 	
-	player.alarm_set(10,slowDuration)
+	other.alarm[10] = (slowDuration)
+	}
 }
+
+
+
+

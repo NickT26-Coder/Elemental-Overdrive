@@ -6,5 +6,5 @@ if (origin == other.id)
 }
 else
 {
-	
+	scrStun(10,4)
 }

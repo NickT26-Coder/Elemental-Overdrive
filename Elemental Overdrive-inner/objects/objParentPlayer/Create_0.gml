@@ -28,8 +28,8 @@ speed = 0
 image_speed = 0
 
 //Scaling t o fit map
-image_xscale=.75
-image_yscale=.75
+image_xscale= 0.10
+image_yscale= 0.10
 
 //aiming
 aimTrue = false
@@ -42,9 +42,15 @@ blink = true;
 
 
 //spell variables
-
+shieldOn = false
 //status effects
 stun = false
 slow = false
 immune = false
 stunImmune = false
+blind = false
+
+//checkpoint
+lapCount = 0
+checkpoint_number = 0
+checkpoint_distance = 0

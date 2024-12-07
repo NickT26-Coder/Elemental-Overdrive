@@ -32,13 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-<<<<<<< Updated upstream
     "name":"spr_Tornado",
     "path":"sprites/spr_Tornado/spr_Tornado.yy",
-=======
-    "name":"Sprite46",
-    "path":"sprites/Sprite46/Sprite46.yy",
->>>>>>> Stashed changes
   },
   "spriteMaskId":null,
   "visible":true,
