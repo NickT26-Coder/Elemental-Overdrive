@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Mana","folderPath":"folders/Objects/Mana.yy","name":"Mana","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Misc","folderPath":"folders/Objects/Misc.yy","name":"Misc","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -77,6 +78,8 @@
     {"id":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"id":{"name":"scrSlow","path":"scripts/scrSlow/scrSlow.yy",},},
     {"id":{"name":"scrStun","path":"scripts/scrStun/scrStun.yy",},},
+    {"id":{"name":"snd_mainTheme","path":"sounds/snd_mainTheme/snd_mainTheme.yy",},},
+    {"id":{"name":"snd_titleMusic","path":"sounds/snd_titleMusic/snd_titleMusic.yy",},},
     {"id":{"name":"spr_credits","path":"sprites/spr_credits/spr_credits.yy",},},
     {"id":{"name":"spr_earthPickup","path":"sprites/spr_earthPickup/spr_earthPickup.yy",},},
     {"id":{"name":"spr_earthquake","path":"sprites/spr_earthquake/spr_earthquake.yy",},},

@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Sounds","order":1,"path":"folders/Sounds.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"obj_checkpoint","order":1,"path":"objects/obj_checkpoint/obj_checkpoint.yy",},
     {"name":"objBlindControler","order":1,"path":"objects/objBlindControler/objBlindControler.yy",},
@@ -21,6 +23,7 @@
     {"name":"objTornado","order":15,"path":"objects/objTornado/objTornado.yy",},
     {"name":"rm_tutorial","order":1,"path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"scrStun","order":1,"path":"scripts/scrStun/scrStun.yy",},
+    {"name":"snd_mainTheme","order":1,"path":"sounds/snd_mainTheme/snd_mainTheme.yy",},
     {"name":"spr_credits","order":2,"path":"sprites/spr_credits/spr_credits.yy",},
     {"name":"spr_earthPickup","order":3,"path":"sprites/spr_earthPickup/spr_earthPickup.yy",},
     {"name":"spr_earthquake","order":4,"path":"sprites/spr_earthquake/spr_earthquake.yy",},

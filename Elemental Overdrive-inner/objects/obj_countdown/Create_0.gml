@@ -6,3 +6,5 @@ alarm[0] = 240
 //Second Counter
 alarm[1] = 60
 time = 3
+
+audio_play_sound(snd_mainTheme, 1, true)
