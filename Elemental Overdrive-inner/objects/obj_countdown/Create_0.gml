@@ -7,4 +7,5 @@ alarm[0] = 240
 alarm[1] = 60
 time = 3
 
+audio_stop_sound(snd_titleMusic)
 audio_play_sound(snd_mainTheme, 1, true)

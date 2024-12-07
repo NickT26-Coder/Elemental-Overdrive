@@ -4,6 +4,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_checkpoint","order":1,"path":"objects/obj_checkpoint/obj_checkpoint.yy",},
+    {"name":"obj_lava_box","order":3,"path":"objects/obj_lava_box/obj_lava_box.yy",},
+    {"name":"obj_water_box","order":2,"path":"objects/obj_water_box/obj_water_box.yy",},
     {"name":"objBlindControler","order":1,"path":"objects/objBlindControler/objBlindControler.yy",},
     {"name":"objDash","order":2,"path":"objects/objDash/objDash.yy",},
     {"name":"objEarthquake","order":3,"path":"objects/objEarthquake/objEarthquake.yy",},
