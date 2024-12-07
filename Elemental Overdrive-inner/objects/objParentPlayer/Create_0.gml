@@ -22,7 +22,11 @@ lapCount = 0
 checkpoint_number = 0
 checkpoint_distance = 0
 
-direction = 90;
+if(room = rm_tutorial){
+	direction = 270
+} else{
+	direction = 180
+}
 speed = 0
 // Sets animation to off
 image_speed = 0
