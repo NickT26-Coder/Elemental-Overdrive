@@ -46,7 +46,9 @@ blink = true;
 
 
 //spell variables
+notEnoughMana = false
 shieldOn = false
+dashOver = false
 //status effects
 stun = false
 slow = false

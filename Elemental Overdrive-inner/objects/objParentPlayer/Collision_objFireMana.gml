@@ -1,10 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (objParentMana.mana_reset == false)
+if (other.mana_reset == false)
 {
 	
-	objParentMana.mana_reset =true;
 	self.fireMana += 1
-	
+	show_debug_message("fire mana get")
 }

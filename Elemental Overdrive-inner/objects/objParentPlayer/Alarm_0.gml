@@ -4,3 +4,4 @@
 // return to base speed
 speed /= 2
 
+dashOver = false

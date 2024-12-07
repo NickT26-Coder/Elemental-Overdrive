@@ -64,7 +64,7 @@ if (array_length(global.gamepads) > 0)
 	    {
 	        case 1: // One element
 			
-				if (castQue[0] == waterCast) 
+				if (castQue[0] == waterCast && waterMana == 0 ) 
 				{
 					show_debug_message("water");
 					var water =instance_create_depth(x,y,depth,objShield,
@@ -80,8 +80,13 @@ if (array_length(global.gamepads) > 0)
 						alarm[1] = 180
 						shieldOn = true
 					
-		        } 
-				else if (castQue[0] == airCast) 
+		        }
+				else if (castQue[0] == waterCast )
+				{
+					notEnoughMana = true
+					castQue = array_create(0);
+				}
+				else if (castQue[0] == airCast && airMana == 0 ) 
 				{
 		                show_debug_message("air");
 						//Creates smoke boost effect
@@ -95,15 +100,28 @@ if (array_length(global.gamepads) > 0)
 						boost.image_angle = image_angle;
 		                speed *= 2;
 		                alarm_set(0, 30);
+						dashOver = true
+						
 		        }
-		        else if (castQue[0] == fireCast) 
+				else if (castQue[0] == airCast)
+				{
+					notEnoughMana = true
+					castQue = array_create(0);
+				}
+				
+		        else if (castQue[0] == fireCast && fireMana == 0) 
 				{
 		           show_debug_message("fire");
 
 					var fire = instance_create_depth(x, y, depth, objFire)
 					fire.origin = id;
 		        }
-		        else if (castQue[0] == earthCast) 
+				else if (castQue[0] == fireCast)
+				{
+					notEnoughMana = true
+					castQue = array_create(0);
+				}
+		        else if (castQue[0] == earthCast && earthMana == 0) 
 				{
 					
 				  var fwdOrBack = 0
@@ -132,6 +150,11 @@ if (array_length(global.gamepads) > 0)
 					});
 					rock.origin = id
 		        }
+				else if (castQue[0] == earthCast)
+				{
+					notEnoughMana = true
+					castQue = array_create(0);
+				}
 				
 				break;
 
@@ -142,7 +165,7 @@ if (array_length(global.gamepads) > 0)
 	            var element2 = castQue[1];
 
 	            // Check for combo
-	            if ((element1 == waterCast && element2 == waterCast)) 
+	            if ((element1 == waterCast && element2 == waterCast && waterMana >= 0)) 
 				{
 	                show_debug_message("water + water");
 					var shield = instance_create_depth(x,y,depth,objShield,
@@ -156,8 +179,12 @@ if (array_length(global.gamepads) > 0)
 						alarm[1] = 180
 						shieldOn = true
 						
-	            } 
-	            else if ((element1 == fireCast && element2 == fireCast)) 
+	            }
+				else if ((element1 == waterCast && element2 == waterCast)) 
+				{
+					scrOOOM()
+				}
+	            else if ((element1 == fireCast && element2 == fireCast && fireMana >= 0)) 
 				{
 	                show_debug_message("fire + fire");
 					var fireball = instance_create_depth(x, y, depth, objFireBall, 
@@ -168,8 +195,12 @@ if (array_length(global.gamepads) > 0)
 					
 					fireball.origin = id;
 					
-	            } 
-	            else if ((element1 == airCast && element2 == airCast)) 
+	            }
+				else if ((element1 == fireCast && element2 == fireCast)) 
+				{
+					scrOOOM()
+				}
+	            else if ((element1 == airCast && element2 == airCast && airMana >= 0)) 
 				{
 	                show_debug_message("air + air");
 					//Creates large smoke effect
@@ -185,8 +216,12 @@ if (array_length(global.gamepads) > 0)
 						boost.image_yscale = 2;
 					speed *= 2.5;
 		            alarm_set(0, 60);
-	            } 
-	            else if ((element1 == earthCast && element2 == earthCast)) 
+	            }
+				else if ((element1 == airCast && element2 == airCast))
+				{
+					scrOOOM()
+				}
+	            else if ((element1 == earthCast && element2 == earthCast && earthMana >= 0)) 
 				{
 	                show_debug_message("earth + earth");
 					var earthquake =instance_create_depth(x,y,depth,objEarthquake,
@@ -195,8 +230,12 @@ if (array_length(global.gamepads) > 0)
 							image_yscale: 1			
 						})
 						earthquake.origin = id;
-	            } 
-	            else if (array_contains(castQue,earthCast) && array_contains(castQue,waterCast)) 
+	            }
+				else if ((element1 == earthCast && element2 == earthCast))
+				{
+					scrOOOM()
+				}
+	            else if (array_contains(castQue,earthCast) && array_contains(castQue,waterCast) && earthMana >= 0 && waterMana >= 0 ) 
 				{
 	                show_debug_message("earth + water");
 					
@@ -204,18 +243,25 @@ if (array_length(global.gamepads) > 0)
 					
 					mud.origin = id;
 					
-					
 	            }
-				else if (array_contains(castQue,earthCast) && array_contains(castQue,fireCast)) 
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,waterCast))
+				{
+					scrOOOM()
+				}
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,fireCast) && earthMana >= 0 && fireMana >= 0) 
 				{
 	                show_debug_message("earth + fire");
 					
-					var mine = instance_create_depth(x,y,depth,objMine)
+					var mine = instance_create_depth(x,y,depth,objMine) 
 					
 					mine.origin = id;
 					
 	            }
-				else if (array_contains(castQue,earthCast) && array_contains(castQue,airCast)) 
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,fireCast))
+				{
+					scrOOOM()
+				}
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,airCast) && earthMana >= 0 && airMana >= 0) 
 				{
 	                show_debug_message("earth + wind");
 					
@@ -240,7 +286,11 @@ if (array_length(global.gamepads) > 0)
 					}
 		        
 	            }
-				else if (array_contains(castQue,fireCast) && array_contains(castQue,airCast)) 
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,airCast))
+				{
+					scrOOOM()
+				}
+				else if (array_contains(castQue,fireCast) && array_contains(castQue,airCast) && fireMana >= 0 && airMana >= 0) 
 				{
 	                show_debug_message("fire + earth");
 					
@@ -248,7 +298,11 @@ if (array_length(global.gamepads) > 0)
 					
 						smoke.origin = id;
 	            }
-				else if (array_contains(castQue,fireCast) && array_contains(castQue,waterCast)) 
+				else if (array_contains(castQue,fireCast) && array_contains(castQue,airCast))
+				{
+					scrOOOM()
+				}
+				else if (array_contains(castQue,fireCast) && array_contains(castQue,waterCast) && fireMana >= 0 && waterMana >= 0) 
 				{
 	                show_debug_message("fire + water");
 					
@@ -264,7 +318,12 @@ if (array_length(global.gamepads) > 0)
 						}
 					}
 	            }
-				else if (array_contains(castQue,waterCast) && array_contains(castQue,airCast)) 
+				else if (array_contains(castQue,fireCast) && array_contains(castQue,waterCast))
+				{
+					scrOOOM()
+				}
+				
+				else if (array_contains(castQue,waterCast) && array_contains(castQue,airCast) && waterMana >= 0 && airMana >= 0) 
 				{
 	                show_debug_message("water + air");
 					
@@ -277,8 +336,12 @@ if (array_length(global.gamepads) > 0)
 					
 					iceGust.origin = id;
 	            }
+				else if (array_contains(castQue,waterCast) && array_contains(castQue,airCast))
+				{
+					scrOOOM()
+				}
 				else
-           
+				
 				break;
 
 				default:
