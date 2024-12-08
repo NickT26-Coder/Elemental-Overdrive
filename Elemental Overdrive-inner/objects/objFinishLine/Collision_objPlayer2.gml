@@ -1,10 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (active)
+if (active_p2)
 {
 lapCounter += 1;
 objPlayer2.lapCount += 1
 obj_checkpoint.passed_p2 = false
-active = false
+objParentMana.mana_reset = false
+objParentMana.image_alpha = 1
+active_p2 = false
 }
-alarm[0] = 240
+alarm[1] = 240
