@@ -84,6 +84,4 @@ if global.room_number == 2 {
 	else {
 		draw_sprite_ext(spr_second_place, 0, new_x + 1500, new_y + 30, 1, 1, 0, c_white, 1)
 	}
-	
-	
 }
