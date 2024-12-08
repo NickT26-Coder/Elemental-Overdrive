@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Object36",
-  "eventList":[],
+  "%Name":"objIce",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Object36",
+  "name":"objIce",
   "overriddenProperties":[],
   "parent":{
     "name":"Misc",

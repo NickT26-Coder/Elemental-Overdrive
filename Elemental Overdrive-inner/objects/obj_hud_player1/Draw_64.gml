@@ -38,56 +38,20 @@ var new_y = 840
 		draw_sprite_ext(spriteVar,0, new_x + 700, new_y + 175, 5, 5, 0, c_white, 1)
 	}
 }
-		//low mana
+		//ooom
+	//if (objPlayer1.notEnoughMana = true)
+	//{
+	//	draw_sprite_ext(spr_waterPickup_none, 0, new_x + 600, new_y + 175, 4, 4, 0, c_white, 1)
+	//	draw_sprite_ext(spr_windPickup_none, 0, new_x + 525, new_y + 175, 4, 4, 0, c_white, 1)
+	//	draw_sprite_ext(spr_firePickup_none, 0, new_x + 450, new_y + 175, 4, 4, 0, c_white, 1)
+	//	draw_sprite_ext(spr_earthPickup_none, 0, new_x + 375, new_y + 175, 4, 4, 0, c_white, 1)
+	//}
 		
 	
 	
-	//if objPlayer1.waterMana == 0 
-	//{	
-	//	draw_sprite_ext(spr_waterPickup_none, 0, new_x + 600, new_y + 175, 4, 4, 0, c_white, 1)
-	//	show_debug_message("low mana water")
-    //}
-	
-	//if objPlayer1.waterMana > 0 
-	//{
-	//	draw_sprite_ext(spr_pickupNone, 0, new_x + 600, new_y + 175, 4, 4, 0, c_white, 1)
-	//}
-	
-	
-    //if (objPlayer1.airMana == 0) 
-	//{
-	//	draw_sprite_ext(spr_windPickup_none, 0, new_x + 525, new_y + 175, 4, 4, 0, c_white, 1)
-	//	show_debug_message("low mana air")
-	//}
-	//else
-	//{
-	//	draw_sprite_ext(spr_pickupNone, 0, new_x + 525, new_y + 175, 4, 4, 0, c_white, 1)
-	//}
 	
 	
 	
-    //if (objPlayer1.fireMana == 0) 
-	//{	
-	//	draw_sprite_ext(spr_firePickup_none, 0, new_x + 450, new_y + 175, 4, 4, 0, c_white, 1)
-	//	show_debug_message("low mana fire")
-    //}
-	//else
-	//{
-	//	draw_sprite_ext(spr_pickupNone, 0, new_x + 450, new_y + 175, 4, 4, 0, c_white, 1)
-	//}
-	
-	
-	
-    //if (objPlayer1.earthMana == 0) 
-	//{	
-	//	draw_sprite_ext(spr_earthPickup_none, 0, new_x + 375, new_y + 175, 4, 4, 0, c_white, 1)
-	//	show_debug_message("low mana earth")
-       
-    //}
-	//else
-	//{
-	//	draw_sprite_ext(spr_pickupNone, 0, new_x + 375, new_y + 175, 4, 4, 0, c_white, 1)
-	//}
 	
 //Amount of elements
 	

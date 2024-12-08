@@ -7,5 +7,7 @@ if (origin == other.id)
 else
 {
 	show_debug_message(" detection working smoke")
-	other.blind = true		
+	other.blind = true
+	other.alarm[7] = 90
+	
 }

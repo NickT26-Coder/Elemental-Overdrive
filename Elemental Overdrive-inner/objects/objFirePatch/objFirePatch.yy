@@ -3,6 +3,8 @@
   "%Name":"objFirePatch",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objParentPlayer","path":"objects/objParentPlayer/objParentPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objIce","path":"objects/objIce/objIce.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objMud","path":"objects/objMud/objMud.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objFirePatch",
@@ -30,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite44",
-    "path":"sprites/Sprite44/Sprite44.yy",
+    "name":"spr_FirePatch",
+    "path":"sprites/spr_FirePatch/spr_FirePatch.yy",
   },
   "spriteMaskId":null,
   "visible":true,

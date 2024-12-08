@@ -64,7 +64,7 @@ if (array_length(global.gamepads) > 0)
 	    {
 	        case 1: // One element
 			
-				if (castQue[0] == waterCast && waterMana >= 0 ) 
+				if (castQue[0] == waterCast && waterMana >= 2 ) 
 				{
 					show_debug_message("water");
 					var water =instance_create_depth(x,y,depth,objShield,
@@ -83,10 +83,9 @@ if (array_length(global.gamepads) > 0)
 		        }
 				else if (castQue[0] == waterCast )
 				{
-					notEnoughMana = true
-					castQue = array_create(0);
+					scrOOOM()
 				}
-				else if (castQue[0] == airCast && airMana >= 0 ) 
+				else if (castQue[0] == airCast && airMana >= 2 ) 
 				{
 		                show_debug_message("air");
 						//Creates smoke boost effect
@@ -105,11 +104,10 @@ if (array_length(global.gamepads) > 0)
 		        }
 				else if (castQue[0] == airCast)
 				{
-					notEnoughMana = true
-					castQue = array_create(0);
+					scrOOOM()
 				}
 				
-		        else if (castQue[0] == fireCast && fireMana >= 0) 
+		        else if (castQue[0] == fireCast && fireMana >= 1) 
 				{
 		           show_debug_message("fire");
 
@@ -118,10 +116,9 @@ if (array_length(global.gamepads) > 0)
 		        }
 				else if (castQue[0] == fireCast)
 				{
-					notEnoughMana = true
-					castQue = array_create(0);
+					scrOOOM()
 				}
-		        else if (castQue[0] == earthCast && earthMana >= 0) 
+		        else if (castQue[0] == earthCast && earthMana >= 1) 
 				{
 					
 				  var fwdOrBack = 0
@@ -145,15 +142,14 @@ if (array_length(global.gamepads) > 0)
 		          //shoot rock
 		         var rock = instance_create_depth(x, y, depth, objRockSpell, 
 					{
-						speed: 5 + speed,
+						speed: 5 + speed ,
 		                direction: aim
 					});
 					rock.origin = id
 		        }
 				else if (castQue[0] == earthCast)
 				{
-					notEnoughMana = true
-					castQue = array_create(0);
+					scrOOOM()
 				}
 				
 				break;
@@ -189,7 +185,7 @@ if (array_length(global.gamepads) > 0)
 	                show_debug_message("fire + fire");
 					var fireball = instance_create_depth(x, y, depth, objFireBall, 
 					{
-						speed: 5,
+						speed: 5 + speed ,
 		                direction: aim
 					});
 					
@@ -426,6 +422,5 @@ if (array_length(global.gamepads) > 0)
 	}
 	
 	
-
 	
 }
