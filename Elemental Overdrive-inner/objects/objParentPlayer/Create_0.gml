@@ -18,7 +18,6 @@ airCast = "Air"
 fireCast = "Fire"
 earthCast = "Earth"
 
-//Checkpoint
 lapCount = 0
 checkpoint_number = 0
 checkpoint_distance = 0
@@ -56,3 +55,8 @@ slow = false
 immune = false
 stunImmune = false
 blind = false
+
+//checkpoint
+lapCount = 0
+checkpoint_number = 0
+checkpoint_distance = 0

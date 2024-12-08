@@ -66,6 +66,7 @@ if (array_length(global.gamepads) > 0)
 			
 				if (castQue[0] == waterCast && waterMana >= 2 ) 
 				{
+					self.waterMana -= 2
 					show_debug_message("water");
 					var water =instance_create_depth(x,y,depth,objShield,
 						{
@@ -85,8 +86,9 @@ if (array_length(global.gamepads) > 0)
 				{
 					scrOOOM()
 				}
-				else if (castQue[0] == airCast && airMana >= 2 ) 
+				else if (castQue[0] == airCast && airMana >= 2 )
 				{
+					self.airMana -= 2
 		                show_debug_message("air");
 						//Creates smoke boost effect
 						var boost = instance_create_depth(
@@ -97,7 +99,10 @@ if (array_length(global.gamepads) > 0)
 						);
 						boost.sprite_index = spr_smallBoost;
 						boost.image_angle = image_angle;
-		                speed *= 2;
+		                if(speed < topSpeed*2)
+						{
+						speed *= 2;
+						}
 		                alarm_set(0, 30);
 						dashOver = true
 						
@@ -107,8 +112,9 @@ if (array_length(global.gamepads) > 0)
 					scrOOOM()
 				}
 				
-		        else if (castQue[0] == fireCast && fireMana >= 1) 
+		        else if (castQue[0] == fireCast && fireMana >= 2) 
 				{
+					self.fireMana -= 2
 		           show_debug_message("fire");
 
 					var fire = instance_create_depth(x, y, depth, objFire)
@@ -120,6 +126,7 @@ if (array_length(global.gamepads) > 0)
 				}
 		        else if (castQue[0] == earthCast && earthMana >= 1) 
 				{
+					self.earthMana -= 1
 					
 				  var fwdOrBack = 0
 					
@@ -161,8 +168,9 @@ if (array_length(global.gamepads) > 0)
 	            var element2 = castQue[1];
 
 	            // Check for combo
-	            if ((element1 == waterCast && element2 == waterCast && waterMana >= 0)) 
+	            if ((element1 == waterCast && element2 == waterCast && waterMana >= 5)) 
 				{
+					self.waterMana -= 5
 	                show_debug_message("water + water");
 					var shield = instance_create_depth(x,y,depth,objShield,
 						{
@@ -180,8 +188,10 @@ if (array_length(global.gamepads) > 0)
 				{
 					scrOOOM()
 				}
-	            else if ((element1 == fireCast && element2 == fireCast && fireMana >= 0)) 
+	            else if ((element1 == fireCast && element2 == fireCast && fireMana >= 5)) 
+				
 				{
+					self.fireMana -= 5
 	                show_debug_message("fire + fire");
 					var fireball = instance_create_depth(x, y, depth, objFireBall, 
 					{
@@ -196,8 +206,9 @@ if (array_length(global.gamepads) > 0)
 				{
 					scrOOOM()
 				}
-	            else if ((element1 == airCast && element2 == airCast && airMana >= 0)) 
+	            else if ((element1 == airCast && element2 == airCast && airMana >= 4)) 
 				{
+					airMana -= 4
 	                show_debug_message("air + air");
 					//Creates large smoke effect
 						var boost = instance_create_depth(
@@ -210,15 +221,19 @@ if (array_length(global.gamepads) > 0)
 						boost.image_angle = image_angle;
 						boost.image_xscale = 2;
 						boost.image_yscale = 2;
-					speed *= 2.5;
+					if (speed < topSpeed * 2){
+						
+					speed *= 2;
+					}
 		            alarm_set(0, 60);
 	            }
 				else if ((element1 == airCast && element2 == airCast))
 				{
 					scrOOOM()
 				}
-	            else if ((element1 == earthCast && element2 == earthCast && earthMana >= 0)) 
+	            else if ((element1 == earthCast && element2 == earthCast && earthMana >= 4)) 
 				{
+				self.earthMana -= 4
 	                show_debug_message("earth + earth");
 					var earthquake =instance_create_depth(x,y,depth,objEarthquake,
 						{	
@@ -231,8 +246,10 @@ if (array_length(global.gamepads) > 0)
 				{
 					scrOOOM()
 				}
-	            else if (array_contains(castQue,earthCast) && array_contains(castQue,waterCast) && earthMana >= 0 && waterMana >= 0 ) 
+	            else if (array_contains(castQue,earthCast) && array_contains(castQue,waterCast) && earthMana >= 1 && waterMana >= 3 ) 
 				{
+					self.waterMana -= 3
+					self.earthMana -= 1
 	                show_debug_message("earth + water");
 					
 					var mud = instance_create_depth(x,y,depth,objMud)
@@ -244,8 +261,10 @@ if (array_length(global.gamepads) > 0)
 				{
 					scrOOOM()
 				}
-				else if (array_contains(castQue,earthCast) && array_contains(castQue,fireCast) && earthMana >= 0 && fireMana >= 0) 
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,fireCast) && earthMana >= 3 && fireMana >= 3)
 				{
+					self.earthMana -= 3
+					self.fireMana -= 3
 	                show_debug_message("earth + fire");
 					
 					var mine = instance_create_depth(x,y,depth,objMine) 
@@ -257,15 +276,17 @@ if (array_length(global.gamepads) > 0)
 				{
 					scrOOOM()
 				}
-				else if (array_contains(castQue,earthCast) && array_contains(castQue,airCast) && earthMana >= 0 && airMana >= 0) 
+				else if (array_contains(castQue,earthCast) && array_contains(castQue,airCast) && earthMana >= 4 && airMana >= 4) 
 				{
+					self.earthMana -= 4
+					self.airMana -= 4
 	                show_debug_message("earth + wind");
 					
 					  
 		          var tornado = instance_create_depth(x, y, depth, objTornado, 
 					{	
 						
-						speed: 2.5 + speed,
+						speed:  4,
 		                direction: aim
 					});
 					
@@ -286,8 +307,10 @@ if (array_length(global.gamepads) > 0)
 				{
 					scrOOOM()
 				}
-				else if (array_contains(castQue,fireCast) && array_contains(castQue,airCast) && fireMana >= 0 && airMana >= 0) 
+				else if (array_contains(castQue,fireCast) && array_contains(castQue,airCast) && fireMana >= 3 && airMana >= 4) 
 				{
+					self.fireMana -= 3
+					self.airMana -= 4
 	                show_debug_message("fire + earth");
 					
 					var smoke = instance_create_depth(x,y,depth,objSmoke)
@@ -298,8 +321,11 @@ if (array_length(global.gamepads) > 0)
 				{
 					scrOOOM()
 				}
-				else if (array_contains(castQue,fireCast) && array_contains(castQue,waterCast) && fireMana >= 0 && waterMana >= 0) 
+				else if (array_contains(castQue,fireCast) && array_contains(castQue,waterCast) && fireMana >= 5 && waterMana >= 5) 
+				
 				{
+					self.fireMana -= 5
+					self.waterMana -= 5
 	                show_debug_message("fire + water");
 					
 					//var shock = instance_create_depth(x,y,depth,objShock)
@@ -319,8 +345,10 @@ if (array_length(global.gamepads) > 0)
 					scrOOOM()
 				}
 				
-				else if (array_contains(castQue,waterCast) && array_contains(castQue,airCast) && waterMana >= 0 && airMana >= 0) 
+				else if (array_contains(castQue,waterCast) && array_contains(castQue,airCast) && waterMana >= 3 && airMana >= 3) 
 				{
+					self.waterMana -= 3
+					self.airMana -= 3
 	                show_debug_message("water + air");
 					
 					var iceGust = instance_create_depth(x, y, depth, objIceGust, 
@@ -384,6 +412,21 @@ if (array_length(global.gamepads) > 0)
 	{
     y -= lengthdir_y(13, direction); 
 	
+	}
+	
+	if (place_meeting(x + lengthdir_x(speed, direction), y, obj_lava_box)) 
+	{
+    x -= lengthdir_x(35, direction); 
+	}
+
+	if (place_meeting(x, y + lengthdir_y(speed, direction), obj_lava_box)) 
+	{
+    y -= lengthdir_y(35, direction); 
+	
+	stun = true;
+    stunImmune = true;
+    alarm[11] = 180; // End stun
+    other.alarm[9] = 180; // End immunity
 	}
 	
 	

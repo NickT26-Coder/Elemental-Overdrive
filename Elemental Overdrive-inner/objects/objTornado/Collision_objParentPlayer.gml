@@ -5,7 +5,9 @@ if (origin == other.id)
     exit
 }
 else
-{
-	scrStun(180,60)
+{	
+	other.stunImmune = false
+	other.immune = false
+	
 	instance_destroy(self)
 }
