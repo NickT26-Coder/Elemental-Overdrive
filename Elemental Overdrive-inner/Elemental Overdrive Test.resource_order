@@ -53,6 +53,7 @@
     {"name":"spr_results","order":20,"path":"sprites/spr_results/spr_results.yy",},
     {"name":"spr_rock","order":21,"path":"sprites/spr_rock/spr_rock.yy",},
     {"name":"spr_second_place","order":22,"path":"sprites/spr_second_place/spr_second_place.yy",},
+    {"name":"spr_shock","order":47,"path":"sprites/spr_shock/spr_shock.yy",},
     {"name":"spr_smallBoost","order":23,"path":"sprites/spr_smallBoost/spr_smallBoost.yy",},
     {"name":"spr_Smoke","order":24,"path":"sprites/spr_Smoke/spr_Smoke.yy",},
     {"name":"spr_spellHudUI","order":25,"path":"sprites/spr_spellHudUI/spr_spellHudUI.yy",},
