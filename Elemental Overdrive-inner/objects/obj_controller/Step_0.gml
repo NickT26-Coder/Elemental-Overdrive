@@ -2,7 +2,6 @@
 // You can write your code in this editor
 if global.room_number == 0 {//Title Screen
 	if gamepad_button_check(0, gp_face1) {
-		audio_stop_all()
 		room_goto_next()	
 		global.room_number += 1
 	}
