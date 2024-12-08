@@ -4,4 +4,5 @@ function scrOOOM()
 {
 	notEnoughMana = true
 	castQue = array_create(0);
+	 alarm[2] = 30
 }
