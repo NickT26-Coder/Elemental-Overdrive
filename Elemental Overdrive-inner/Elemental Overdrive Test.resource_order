@@ -5,5 +5,6 @@
     {"name":"obj_water_box","order":3,"path":"objects/obj_water_box/obj_water_box.yy",},
     {"name":"objAim","order":1,"path":"objects/objAim/objAim.yy",},
     {"name":"objIce","order":2,"path":"objects/objIce/objIce.yy",},
+    {"name":"Sprite65","order":5,"path":"sprites/Sprite65/Sprite65.yy",},
   ],
 }

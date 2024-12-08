@@ -1,10 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (origin == other.id)
+if (global.melted == true)
 {
-    exit
+
+	image_alpha = 0
 }
-else
-{
-	scrSlow(3,0.5)
-}
+

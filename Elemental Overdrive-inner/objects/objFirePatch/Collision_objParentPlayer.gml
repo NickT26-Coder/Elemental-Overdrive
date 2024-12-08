@@ -7,8 +7,8 @@
         show_debug_message("Stunning player: " + string(other.id));
         other.stun = true;
         other.stunImmune = true;
-        other.alarm[11] = 120; // End stun
-        other.alarm[9] = 120 + 60; // End immunity
+        other.alarm[11] = 30 // End stun
+        other.alarm[9] = 60; // End immunity
 		} 
 		else 
 		{
